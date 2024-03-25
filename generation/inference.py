@@ -83,7 +83,7 @@ def args_init():
     parser.add_argument(
         "--sample",
         type=int,
-        default=5,
+        default=1,
         help="The number of code samples that are randomly generated for each task.",
     )
     args = parser.parse_args()
@@ -94,3 +94,6 @@ if __name__ == '__main__':
     args = args_init()
     infer = InferencePipeline(args)
     infer.pipeline()
+    
+
+    

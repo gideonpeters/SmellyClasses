@@ -28,18 +28,6 @@ class InferenceUtil:
 
     @staticmethod
     def generate_prompt(instruction, model_name):
-        if model_name == ModelName.DeepSeekCoder_inst.value or model_name == ModelName.Gemini_Pro.value:
-            return instruction
-
-        elif model_name == ModelName.Magicoder.value:
-            return f"""You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.
-
-@@ Instruction:
-{instruction}
-
-@@ Response:
-"""
-        else:
             return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request.
 
 ### Instruction:
