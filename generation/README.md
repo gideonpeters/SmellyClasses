@@ -7,6 +7,7 @@ python inference.py \
 --model 0 \
 --checkpoint model_path \
 --output_path model_output.json \
+--output_path_2 ../output/generation/pys \
 --greedy 1 \
 --data_path ../data/ClassEval_data.json \
 --cuda 0 1 \
