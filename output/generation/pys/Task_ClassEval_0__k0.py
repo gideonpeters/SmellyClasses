@@ -18,7 +18,7 @@ class AccessGatewayFilter:
         >>> filter.filter({'path': '/login', 'method': 'POST'})
         True
         """
-        # Implement filtering logic here
+        # Add your logic here to filter the request
         return True
 
     def is_start_with(self, request_uri):
@@ -30,7 +30,7 @@ class AccessGatewayFilter:
         >>> filter.is_start_with('/api/data')
         True
         """
-        # Implement URI prefix checking logic here
+        # Add your logic here to check if the request URI starts with certain prefixes
         return True
 
     def get_jwt_user(self, request):
@@ -40,9 +40,9 @@ class AccessGatewayFilter:
         :return: dict or None, the user information if the token is valid, None otherwise
         >>> filter = AccessGatewayFilter()
         >>> filter.get_jwt_user({'headers': {'Authorization': {'user': {'name': 'user1'}, 'jwt': 'user1'+str(datetime.date.today())}}})
-        {'user': {'name': 'user1'}
+        {'user': {'name': 'user1'}}
         """
-        # Implement JWT token user information retrieval logic here
+        # Add your logic here to extract user information from JWT token
         return {'user': {'name': 'user1'}}
 
     def set_current_user_info_and_log(self, user):
@@ -54,5 +54,5 @@ class AccessGatewayFilter:
         >>> user = {'name': 'user1', 'address': '127.0.0.1'}
         >>> filter.set_current_user_info_and_log(user)
         """
-        # Implement setting user info and logging access logic here
-        logging.info(f"User {user['name']} accessed from {user['address']} at {datetime.datetime.now()}")
+        # Add your logic here to set current user information and log the access
+        logging.info(f"User '{user['name']}' accessed from {user['address']} at {datetime.datetime.now()}")

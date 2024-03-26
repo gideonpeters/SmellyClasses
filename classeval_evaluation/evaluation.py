@@ -29,6 +29,8 @@ if __name__ == '__main__':
     AutoT = AutoTest(args.eval_data)
     model_list = [args.source_file_name]
 
+    print(model_list)
+
     for model_name in model_list:
         file_path = PathUtil().model_output_data(model_name, "json")
         AutoT.test_pipeline(model_name, file_path)
@@ -39,8 +41,8 @@ if __name__ == '__main__':
         result["pass_1_greedy"] = AutoT.cal_metrics_pass_at_k(model_list, 1, 1)
     else:
         result["pass_1"] = AutoT.cal_metrics_pass_at_k(model_list, 1, 5)
-        result["pass_3"] = AutoT.cal_metrics_pass_at_k(model_list, 3, 5)
-        result["pass_5"] = AutoT.cal_metrics_pass_at_k(model_list, 5, 5)
+        # result["pass_3"] = AutoT.cal_metrics_pass_at_k(model_list, 3, 5)
+        # result["pass_5"] = AutoT.cal_metrics_pass_at_k(model_list, 5, 5)
     save_path = PathUtil().test_result_data("pass_at_k_result", 'json')
 
     if os.path.exists(save_path):
@@ -55,12 +57,12 @@ if __name__ == '__main__':
         else:
             if "pass_1" in ori_data:
                 ori_data["pass_1"][args.source_file_name] = result["pass_1"][args.source_file_name]
-                ori_data["pass_3"][args.source_file_name] = result["pass_3"][args.source_file_name]
-                ori_data["pass_5"][args.source_file_name] = result["pass_5"][args.source_file_name]
+                # ori_data["pass_3"][args.source_file_name] = result["pass_3"][args.source_file_name]
+                # ori_data["pass_5"][args.source_file_name] = result["pass_5"][args.source_file_name]
             else:
                 ori_data["pass_1"] = result["pass_1"]
-                ori_data["pass_3"] = result["pass_3"]
-                ori_data["pass_5"] = result["pass_5"]
+                # ori_data["pass_3"] = result["pass_3"]
+                # ori_data["pass_5"] = result["pass_5"]
     else:
         ori_data = result
 

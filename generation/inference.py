@@ -22,6 +22,12 @@ def args_init():
         help="output file path",
     )
     parser.add_argument(
+        "--output_path_2",
+        type=str,
+        default="model_output_2.json",
+        help="second output file path",
+    )
+    parser.add_argument(
         "--cuda",
         type=int,
         nargs="+",  # Accept one or more integers

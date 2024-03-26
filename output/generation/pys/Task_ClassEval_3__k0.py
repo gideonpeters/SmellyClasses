@@ -25,7 +25,8 @@ class ArrangementCalculator:
         """
         if m is None or n == m:
             return ArrangementCalculator.factorial(n)
-        return ArrangementCalculator.factorial(n) // ArrangementCalculator.factorial(n - m)
+        else:
+            return ArrangementCalculator.factorial(n) // ArrangementCalculator.factorial(n - m)
 
     @staticmethod
     def count_all(n):
@@ -76,4 +77,5 @@ class ArrangementCalculator:
         """
         if n == 0:
             return 1
-        return n * ArrangementCalculator.factorial(n - 1)
+        else:
+            return n * ArrangementCalculator.factorial(n - 1)

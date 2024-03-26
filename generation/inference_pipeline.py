@@ -15,6 +15,7 @@ class InferencePipeline:
             self.file_cont = json.load(f)
         self.greedy = args.greedy
         self.output_path = args.output_path
+        self.output_path_2 = args.output_path_2
         self.cuda = "cuda"
         if args.cuda is not None:
             os.environ["CUDA_VISIBLE_DEVICES"] = ','.join([str(i) for i in args.cuda])
@@ -35,8 +36,12 @@ class InferencePipeline:
         if self.model_name == ModelName.GPT_3_5.value or self.model_name == ModelName.GPT_4.value:
             return
    
-    def save_result(self, result, filename):
-        with open(self.output_path + '/' + filename, 'w', encoding = 'utf-8') as f:
+    def save_result(self, result):
+        with open(self.output_path, 'w', encoding = 'utf-8') as f:
+            json.dump(result, f, indent=4)
+
+    def save_result_as_files(self, result, filename):
+        with open(self.output_path_2 + '/' + filename, 'w', encoding = 'utf-8') as f:
             f.write(result)
 
     def model_generate(self, prompt):
@@ -106,15 +111,16 @@ class InferencePipeline:
         if self.generation_strategy == GenerationStrategy.Holistic.value:
             result = []
             for cont in tqdm(self.file_cont):
-                # pred = []
+                pred = []
                 try:
                     prompt = self.construct_prompt(GenerationStrategy.Holistic, cont)
                     for _ in range(self.SAMPLE_NUMS):
                         outputs = self.model_generate(prompt)
-                        self.save_result(outputs[10:-3], 'Task_'+ cont['task_id']+ '__k' + str(_) + '.py')
-                        # pred.append(outputs)
-                    # cont['predict'] = pred
-                    # result.append(cont)
+                        self.save_result_as_files(outputs[10:-3], 'Task_'+ cont['task_id']+ '__k' + str(_) + '.py')
+                        pred.append(outputs)
+                    cont['predict'] = pred
+                    result.append(cont)
+                    self.save_result(result)
 
                 except Exception as e:
                     print(e)
@@ -126,4 +132,4 @@ class InferencePipeline:
         
         print("error_task_id_list: ", error_task_id_list)
         self.post_process(result)
-        # self.save_result(result)
+        self.save_result(result)

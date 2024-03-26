@@ -1,0 +1,233 @@
+{
+    "gpt3.5_v0": {
+        "ClassEval_0": {
+            "AccessGatewayFilterTest": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "AccessGatewayFilterTestFilter": {
+                "EachTestResult": [
+                    "partial_success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 1,
+                "success": 0
+            },
+            "AccessGatewayFilterTestGetJwtUser": {
+                "EachTestResult": [
+                    "partial_success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 1,
+                "success": 0
+            },
+            "AccessGatewayFilterTestIsStartWith": {
+                "EachTestResult": [
+                    "partial_success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 1,
+                "success": 0
+            },
+            "TestClass": {
+                "ClassEachTestResult": [
+                    "class_partial_success"
+                ],
+                "class_fail": 0,
+                "class_partial_success": 1,
+                "class_success": 0
+            }
+        },
+        "ClassEval_1": {
+            "AreaCalculatorTestCalculateAnnulusArea": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "AreaCalculatorTestCalculateCircleArea": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "AreaCalculatorTestCalculateCylinderArea": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "AreaCalculatorTestCalculateMain": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "AreaCalculatorTestCalculateSectorArea": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "AreaCalculatorTestCalculateSphereArea": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "TestClass": {
+                "ClassEachTestResult": [
+                    "class_success"
+                ],
+                "class_fail": 0,
+                "class_partial_success": 0,
+                "class_success": 1
+            }
+        },
+        "ClassEval_2": {
+            "ArgumentParserTestAddArgument": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "ArgumentParserTestConvertType": {
+                "EachTestResult": [
+                    "partial_success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 1,
+                "success": 0
+            },
+            "ArgumentParserTestGetArgument": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "ArgumentParserTestMain": {
+                "EachTestResult": [
+                    "fail"
+                ],
+                "error": 0,
+                "fail": 1,
+                "partial_success": 0,
+                "success": 0
+            },
+            "ArgumentParserTestParseArguments": {
+                "EachTestResult": [
+                    "partial_success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 1,
+                "success": 0
+            },
+            "TestClass": {
+                "ClassEachTestResult": [
+                    "class_fail"
+                ],
+                "class_fail": 1,
+                "class_partial_success": 0,
+                "class_success": 0
+            }
+        },
+        "ClassEval_3": {
+            "ArrangementCalculatorTest": {
+                "EachTestResult": [
+                    "fail"
+                ],
+                "error": 0,
+                "fail": 1,
+                "partial_success": 0,
+                "success": 0
+            },
+            "ArrangementCalculatorTestCount": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "ArrangementCalculatorTestCountAll": {
+                "EachTestResult": [
+                    "partial_success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 1,
+                "success": 0
+            },
+            "ArrangementCalculatorTestFactorial": {
+                "EachTestResult": [
+                    "success"
+                ],
+                "error": 0,
+                "fail": 0,
+                "partial_success": 0,
+                "success": 1
+            },
+            "ArrangementCalculatorTestSelect": {
+                "EachTestResult": [
+                    "fail"
+                ],
+                "error": 0,
+                "fail": 1,
+                "partial_success": 0,
+                "success": 0
+            },
+            "ArrangementCalculatorTestSelectAll": {
+                "EachTestResult": [
+                    "fail"
+                ],
+                "error": 0,
+                "fail": 1,
+                "partial_success": 0,
+                "success": 0
+            },
+            "TestClass": {
+                "ClassEachTestResult": [
+                    "class_fail"
+                ],
+                "class_fail": 1,
+                "class_partial_success": 0,
+                "class_success": 0
+            }
+        }
+    }
+}

@@ -32,23 +32,16 @@ class ArgumentParser:
         >>> parser.arguments
         {'arg1': 'value1', 'arg2': 'value2', 'option1': True, 'option2': True}
         """
-        args_list = command_string.split()[2:]
-        for arg in args_list:
-            if '=' in arg:
-                key, value = arg.split('=')
+        args_list = command_string.split()[2:]  # Extracting arguments from the command string
+        for i in range(0, len(args_list), 2):
+            arg = args_list[i].lstrip('-')  # Extracting argument name
+            value = args_list[i + 1]  # Extracting argument value
+            if arg in self.types:
+                self.arguments[arg] = self._convert_type(arg, value)
             else:
-                key = arg
-                value = True
-            if key[0] == '-':
-                key = key[1:]
-            if key in self.types:
-                self.arguments[key] = self._convert_type(key, value)
-            else:
-                self.arguments[key] = value
-
-        missing_args = self.required - set(self.arguments.keys())
-        if missing_args:
-            return False, missing_args
+                self.arguments[arg] = value
+                if arg in self.required:
+                    return False, {arg}
         return True, None
 
     def get_argument(self, key):
@@ -93,8 +86,5 @@ class ArgumentParser:
         21
         """
         if arg in self.types:
-            try:
-                return self.types[arg](value)
-            except ValueError:
-                return value
+            return self.types[arg](value)
         return value
