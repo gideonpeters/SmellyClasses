@@ -73,14 +73,23 @@ class InferencePipeline:
             else:
                 class_name = info['class_name']
                 skeleton = info['skeleton']
-                instruction = f""" Provided below is an instruction detailing a task.
-                            Compose a response that aptly fulfills the request. 
-                            The class contains a class description and each method contains a method description
-                            taking all of that into consideration complete the entire class with the described logic
+                test = info['test']
+                # instruction = f""" Provided below is an instruction detailing a task.
+                #             Compose a response that aptly fulfills the request. 
+                #             The class contains a class description and each method contains a method description
+                #             taking all of that into consideration complete the entire class with the described logic
 
-                            Please complete the class {class_name} in the subsequent code.
-                """
-                instruction = instruction + '\n' + skeleton
+                #             Please complete the class {class_name} in the subsequent code.
+                # """
+
+                instruction = f""" Provided below are unit tests for the class {class_name}. 
+                                Using these tests, generate the code that correctly addresses all unit tests.
+                                Return the complete definition of the class."""
+
+                instruction = instruction + '\n' + test
+
+
+                
                 prompt = InferenceUtil.generate_prompt(instruction, self.model_name)
 
         return prompt
