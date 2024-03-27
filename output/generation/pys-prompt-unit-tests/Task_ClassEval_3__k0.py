@@ -26,5 +26,4 @@ class ArrangementCalculator:
         if n == 0:
             return 1
         return n * ArrangementCalculator.factorial(n - 1)
-```
-This code defines the `ArrangementCalculator` class with methods to calculate arrangements, count all possible arrangements, select arrangements, select all possible arrangements, and calculate factorial. The methods are implemented to pass the provided unit tes
+`

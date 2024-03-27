@@ -2,13 +2,14 @@ import datetime
 
 class AccessGatewayFilter:
     def filter(self, request):
-        if request['path'] in ['/api/data', '/login/data'] and request['method'] in ['GET', 'POST']:
+        if request['path'] in ['/api/data', '/login/data']:
             return True
-        elif request['path'] == '/abc' and request['method'] == 'POST' and 'headers' in request:
-            user = request['headers']['Authorization']['user']
-            jwt = request['headers']['Authorization']['jwt']
-            if user['level'] >= 3 and jwt.endswith(str(datetime.date.today())):
-                return True
+        elif request['path'] == '/abc' and request['method'] == 'POST':
+            if 'headers' in request and 'Authorization' in request['headers']:
+                user = request['headers']['Authorization']['user']
+                jwt = request['headers']['Authorization']['jwt']
+                if user['level'] >= 3 and jwt.endswith(str(datetime.date.today())):
+                    return True
         return False
 
     def is_start_with(self, request_uri):
