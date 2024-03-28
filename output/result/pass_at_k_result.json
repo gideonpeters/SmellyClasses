@@ -5,6 +5,12 @@
             "class_success": 0.25,
             "fun_partial_success": 0.8095238095238095,
             "fun_success": 0.5238095238095238
+        },
+        "gpt3.5_v2": {
+            "class_partial_success": 0.55,
+            "class_success": 0.28,
+            "fun_partial_success": 0.7928286852589641,
+            "fun_success": 0.6235059760956175
         }
     }
 }
