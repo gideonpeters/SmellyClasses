@@ -7,6 +7,7 @@ from tqdm import tqdm
 from inference_util import InferenceUtil, ModelName, GenerationStrategy
 import os
 import openai
+import re
 
 class InferencePipeline:
 
@@ -59,7 +60,7 @@ class InferencePipeline:
                     ]
                 )
 
-                sleep(random.uniform(1, 2))
+            sleep(random.uniform(1, 2))
             
             outputs = response.choices[0]["message"]["content"]
             return outputs
@@ -84,12 +85,10 @@ class InferencePipeline:
 
                 instruction = f""" Provided below are unit tests for the class {class_name}. 
                                 Using these tests, generate the code that correctly addresses all unit tests.
-                                Return the complete definition of the class."""
-
+                                Return the complete definition of the class.
+                              """
                 instruction = instruction + '\n' + test
 
-
-                
                 prompt = InferenceUtil.generate_prompt(instruction, self.model_name)
 
         return prompt
@@ -111,6 +110,7 @@ class InferencePipeline:
                     for i in range(len(raw_output)):
                         method_name = cont['methods_info'][i]['method_name']
                         code = raw_output[i]
+
                         method_code = InferenceUtil.extract_method_code(code, method_name)
                         class_code += '\n\n' + method_code
                     cont['predict'].append(class_code)
@@ -119,13 +119,19 @@ class InferencePipeline:
         error_task_id_list = []
         if self.generation_strategy == GenerationStrategy.Holistic.value:
             result = []
+
             for cont in tqdm(self.file_cont):
                 pred = []
                 try:
                     prompt = self.construct_prompt(GenerationStrategy.Holistic, cont)
                     for _ in range(self.SAMPLE_NUMS):
                         outputs = self.model_generate(prompt)
-                        self.save_result_as_files(outputs[10:-3], 'Task_'+ cont['task_id']+ '__k' + str(_) + '.py')
+                        pattern = r"```python\n([\s\S]*)```"
+                        match = re.search(pattern, outputs)
+                        if match:
+                            code = match.group(1)
+                        
+                        self.save_result_as_files(code, 'Task_'+ cont['task_id']+ '__k' + str(_) + '.py')
                         pred.append(outputs)
                     cont['predict'] = pred
                     result.append(cont)

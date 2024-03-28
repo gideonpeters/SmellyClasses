@@ -17,14 +17,14 @@ class AreaCalculator:
         calculate the area of circle based on self.radius
         :return: area of circle, float
         """
-        return math.pi * self.radius ** 2
+        return round(math.pi * self.radius**2, 2)
 
     def calculate_sphere_area(self):
         """
         calculate the area of sphere based on self.radius
         :return: area of sphere, float
         """
-        return 4 * math.pi * self.radius ** 2
+        return round(4 * math.pi * self.radius**2, 2)
 
     def calculate_cylinder_area(self, height):
         """
@@ -32,7 +32,7 @@ class AreaCalculator:
         :param height: height of cylinder, float
         :return: area of cylinder, float
         """
-        return 2 * math.pi * self.radius * (self.radius + height)
+        return round(2 * math.pi * self.radius * (self.radius + height), 2)
 
     def calculate_sector_area(self, angle):
         """
@@ -40,7 +40,7 @@ class AreaCalculator:
         :param angle: angle of sector, float
         :return: area of sector, float
         """
-        return 0.5 * self.radius ** 2 * angle
+        return round(0.5 * self.radius**2 * angle, 2)
 
     def calculate_annulus_area(self, inner_radius, outer_radius):
         """
@@ -49,4 +49,4 @@ class AreaCalculator:
         :param outer_radius: outer radius of sector, float
         :return: area of annulus, float
         """
-        return math.pi * (outer_radius ** 2 - inner_radius ** 2)
+        return round(math.pi * (outer_radius**2 - inner_radius**2), 3)
