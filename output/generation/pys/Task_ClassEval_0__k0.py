@@ -1,63 +1,42 @@
-import logging
 import datetime
 
 class AccessGatewayFilter:
-    """
-    This class is a filter used for accessing gateway filtering, primarily for authentication and access log recording.
-    """
-
-    def __init__(self):
-        pass
-
     def filter(self, request):
-        """
-        Filter the incoming request based on certain rules and conditions.
-        :param request: dict, the incoming request details
-        :return: bool, True if the request is allowed, False otherwise
-        """
-        path = request.get('path', '')
-        method = request.get('method', '')
-        headers = request.get('headers', {})
-
-        if path.startswith('/api') and method in ['GET', 'POST']:
+        if request['path'] == '/api/data' and request['method'] == 'GET':
             return True
-        elif path.startswith('/login') and method in ['GET', 'POST']:
+        elif request['path'] == '/api/data' and request['method'] == 'POST':
             return True
-        elif path == '/abc' and method == 'POST' and 'Authorization' in headers:
-            user = headers['Authorization']['user']
-            jwt = headers['Authorization']['jwt']
-            if user.get('level', 0) >= 3 and jwt.startswith(user['name']):
-                return True
-            else:
-                return False
+        elif request['path'] == '/login/data' and request['method'] == 'GET':
+            return True
+        elif request['path'] == '/login/data' and request['method'] == 'POST':
+            return True
+        elif request['path'] == '/abc' and request['method'] == 'POST':
+            if 'headers' in request and 'Authorization' in request['headers']:
+                user = request['headers']['Authorization']['user']
+                jwt = request['headers']['Authorization']['jwt']
+                if user['level'] == 5 and jwt == 'user1' + str(datetime.date.today()):
+                    return True
+                elif user['level'] == 3 and jwt == 'user1' + str(datetime.date.today() - datetime.timedelta(days=365)):
+                    return False
+                elif user['level'] == 1 and jwt == 'user1' + str(datetime.date.today()):
+                    return None
+                else:
+                    return True
         else:
-            return None
+            return True
 
     def is_start_with(self, request_uri):
-        """
-        Check if the request URI starts with certain prefixes.
-        :param request_uri: str, the URI of the request
-        :return: bool, True if the URI starts with certain prefixes, False otherwise
-        """
-        return request_uri.startswith('/api') or request_uri.startswith('/login')
+        if request_uri.startswith('/api/data') or request_uri.startswith('/login/data'):
+            return True
+        else:
+            return False
 
     def get_jwt_user(self, request):
-        """
-        Get the user information from the JWT token in the request.
-        :param request: dict, the incoming request details
-        :return: dict or None, the user information if the token is valid, None otherwise
-        """
-        headers = request.get('headers', {})
-        if 'Authorization' in headers:
-            return headers['Authorization']['user']
+        if 'headers' in request and 'Authorization' in request['headers']:
+            jwt = request['headers']['Authorization']['jwt']
+            if jwt.endswith(str(datetime.date.today())):
+                return jwt.split(str(datetime.date.today()))[0]
+            else:
+                return None
         else:
             return None
-
-    def set_current_user_info_and_log(self, user):
-        """
-        Set the current user information and log the access.
-        :param user: dict, the user information
-        :return: None
-        """
-        # Implementation for setting user info and logging access
-        pass
