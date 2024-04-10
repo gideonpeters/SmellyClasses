@@ -2193,38 +2193,38 @@
         "ClassEval_44": {
             "HtmlUtilTest": {
                 "EachTestResult": [
-                    "error"
+                    "fail"
                 ],
-                "error": 1,
-                "fail": 0,
+                "error": 0,
+                "fail": 1,
                 "partial_success": 0,
                 "success": 0
             },
             "HtmlUtilTestExtractCodeFromHtmlText": {
                 "EachTestResult": [
-                    "error"
+                    "partial_success"
                 ],
-                "error": 1,
+                "error": 0,
                 "fail": 0,
-                "partial_success": 0,
+                "partial_success": 1,
                 "success": 0
             },
             "HtmlUtilTestFormatLineFeed": {
                 "EachTestResult": [
-                    "error"
+                    "success"
                 ],
-                "error": 1,
+                "error": 0,
                 "fail": 0,
                 "partial_success": 0,
-                "success": 0
+                "success": 1
             },
             "HtmlUtilTestFormatLineHtmlText": {
                 "EachTestResult": [
-                    "error"
+                    "partial_success"
                 ],
-                "error": 1,
+                "error": 0,
                 "fail": 0,
-                "partial_success": 0,
+                "partial_success": 1,
                 "success": 0
             },
             "TestClass": {
@@ -5135,47 +5135,47 @@
             },
             "VectorUtilTest": {
                 "EachTestResult": [
-                    "error"
+                    "fail"
                 ],
-                "error": 1,
-                "fail": 0,
+                "error": 0,
+                "fail": 1,
                 "partial_success": 0,
                 "success": 0
             },
             "VectorUtilTestComputeIdfWeightDict": {
                 "EachTestResult": [
-                    "error"
+                    "fail"
                 ],
-                "error": 1,
-                "fail": 0,
+                "error": 0,
+                "fail": 1,
                 "partial_success": 0,
                 "success": 0
             },
             "VectorUtilTestCosineSimilarities": {
                 "EachTestResult": [
-                    "error"
+                    "success"
                 ],
-                "error": 1,
+                "error": 0,
                 "fail": 0,
                 "partial_success": 0,
-                "success": 0
+                "success": 1
             },
             "VectorUtilTestNSimilarity": {
                 "EachTestResult": [
-                    "error"
+                    "partial_success"
                 ],
-                "error": 1,
+                "error": 0,
                 "fail": 0,
-                "partial_success": 0,
+                "partial_success": 1,
                 "success": 0
             },
             "VectorUtilTestSimilarity": {
                 "EachTestResult": [
-                    "error"
+                    "partial_success"
                 ],
-                "error": 1,
+                "error": 0,
                 "fail": 0,
-                "partial_success": 0,
+                "partial_success": 1,
                 "success": 0
             }
         },

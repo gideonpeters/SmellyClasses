@@ -34,4 +34,3 @@ class MahjongConnect:
             if any(icon != ' ' for icon in row):
                 return False
         return True
-```

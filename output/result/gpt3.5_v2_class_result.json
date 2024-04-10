@@ -1159,23 +1159,23 @@
         "ClassEval_44_0": {
             "HtmlUtilTest": {
                 "errors": 0,
-                "failures": 0,
-                "testsRun": 0
+                "failures": 1,
+                "testsRun": 1
             },
             "HtmlUtilTestExtractCodeFromHtmlText": {
                 "errors": 0,
-                "failures": 0,
-                "testsRun": 0
+                "failures": 4,
+                "testsRun": 5
             },
             "HtmlUtilTestFormatLineFeed": {
                 "errors": 0,
                 "failures": 0,
-                "testsRun": 0
+                "testsRun": 5
             },
             "HtmlUtilTestFormatLineHtmlText": {
                 "errors": 0,
-                "failures": 0,
-                "testsRun": 0
+                "failures": 10,
+                "testsRun": 12
             }
         }
     },
@@ -2705,28 +2705,28 @@
         "ClassEval_93_0": {
             "VectorUtilTest": {
                 "errors": 0,
-                "failures": 0,
-                "testsRun": 0
+                "failures": 1,
+                "testsRun": 1
             },
             "VectorUtilTestComputeIdfWeightDict": {
                 "errors": 0,
-                "failures": 0,
-                "testsRun": 0
+                "failures": 5,
+                "testsRun": 5
             },
             "VectorUtilTestCosineSimilarities": {
                 "errors": 0,
                 "failures": 0,
-                "testsRun": 0
+                "testsRun": 5
             },
             "VectorUtilTestNSimilarity": {
                 "errors": 0,
-                "failures": 0,
-                "testsRun": 0
+                "failures": 5,
+                "testsRun": 6
             },
             "VectorUtilTestSimilarity": {
                 "errors": 0,
-                "failures": 0,
-                "testsRun": 0
+                "failures": 2,
+                "testsRun": 5
             }
         }
     },
