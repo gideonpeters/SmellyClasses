@@ -14,7 +14,7 @@ from tenacity import (
     wait_random_exponential,
 )  # for exponential backoff
 
-api_key = "[Your_API_Key_Here]"
+api_key = "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"
 client = OpenAI(api_key=api_key)
 
 
@@ -88,10 +88,16 @@ class PythonProgrammer(Programmer):
     #CHANGE YOUR PROMPT HERE
     def _generate_prompt(self, code=None, messages=None):
 
+        # prompt = f""" You are an expert Python developer.
+        #             You will receive a class that has one or multiple code smells.
+        #             These are the list of smells: ```\n{messages}```
+        #             This is the class snippet: ```\n{code}```
+        #             Return the complete class with the code smells fixed."""
+        
         prompt = f""" You are an expert Python developer.
-                    You will receive a class that has one or multiple code smells.
-                    These are the list of smells: ```{messages}```
-                    This is the class snippet: ```{code}```
+                    You will receive a class that has one or multiple code smells detected by SonarQube.
+                    These are the list of SonarQube rules that are violated:  ```\n{messages}```
+                    This is the class snippet: ```\n{code}```
                     Return the complete class with the code smells fixed."""
 
         print(prompt)
@@ -131,17 +137,33 @@ if __name__ == "__main__":
     filename = "RQ1 findings.csv"
 
     df = pd.read_csv(filename)
-    grouped = df.groupby('project')
+
+    # get all messages
+    # for group_name, group_data in grouped:
+    #     print(f"Group Name: {group_name}")
+    #     print(group_data)
+    #     messages = ""
+    #     for index, row in group_data.iterrows():
+    #         messages += row['message'] + "\n"
+    #     print(messages)
+
+    #     python_code = programmer._read_python_file("output/generation/pys/" + group_name + ".py")
+    #     output = programmer.program(group_name, python_code, messages)
+    #     programmer._write_to_python_file("output/fix_code_smells/" + group_name + ".py", output)
+
+    # group by rule number
+    df2 = df.drop_duplicates(subset=["project", "rule"])
+    grouped = df2.groupby('project')
     for group_name, group_data in grouped:
         print(f"Group Name: {group_name}")
         print(group_data)
-        messages = ""
+        rules = ""
         for index, row in group_data.iterrows():
-            messages += row['message'] + "\n"
-        print(messages)
+            rules += row['rule'] + "\n"
+        print(rules)
 
         python_code = programmer._read_python_file("output/generation/pys/" + group_name + ".py")
-        output = programmer.program(group_name, python_code, messages)
-        programmer._write_to_python_file("output/fix_code_smells/" + group_name + ".py", output)
+        output = programmer.program(group_name, python_code, rules)
+        programmer._write_to_python_file("output/fix_code_smells/Rule_number/" + group_name + ".py", output)
 
 print("Text files created successfully.")

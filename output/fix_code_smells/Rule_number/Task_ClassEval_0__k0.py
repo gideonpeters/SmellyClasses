@@ -1,17 +1,10 @@
 import datetime
 
-API_DATA_PATH = '/api/data'
-LOGIN_DATA_PATH = '/login/data'
-
 class AccessGatewayFilter:
     def filter(self, request):
-        if request['path'] == API_DATA_PATH and request['method'] == 'GET':
+        if request['path'] == '/api/data' and (request['method'] == 'GET' or request['method'] == 'POST'):
             return True
-        elif request['path'] == API_DATA_PATH and request['method'] == 'POST':
-            return True
-        elif request['path'] == LOGIN_DATA_PATH and request['method'] == 'GET':
-            return True
-        elif request['path'] == LOGIN_DATA_PATH and request['method'] == 'POST':
+        elif request['path'] == '/login/data' and (request['method'] == 'GET' or request['method'] == 'POST'):
             return True
         elif request['path'] == '/abc' and request['method'] == 'POST':
             if 'headers' in request and 'Authorization' in request['headers']:
@@ -29,7 +22,7 @@ class AccessGatewayFilter:
             return True
 
     def is_start_with(self, request_uri):
-        if request_uri.startswith(API_DATA_PATH) or request_uri.startswith(LOGIN_DATA_PATH):
+        if request_uri.startswith('/api/data') or request_uri.startswith('/login/data'):
             return True
         else:
             return False
