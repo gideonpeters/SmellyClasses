@@ -1,3 +1,4 @@
+```python
 import xml.etree.ElementTree as ET
 import os
 
@@ -93,3 +94,4 @@ class XMLProcessorTest(unittest.TestCase):
         self.assertEqual(elements[2].text, 'orange')
 
         os.remove(XMLProcessor.FILE_NAME)
+```

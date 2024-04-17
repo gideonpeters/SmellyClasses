@@ -1,3 +1,6 @@
+```python
+import re
+
 class DiscountStrategy:
     fidelity_promo = 'FidelityPromo'
     bulk_item_promo = 'BulkItemPromo'
@@ -33,3 +36,4 @@ class DiscountStrategy:
         elif self.promo == self.large_order_promo:
             discount = 0.07 * self.total() if len(self.cart) >= 10 else 0
         return discount
+```

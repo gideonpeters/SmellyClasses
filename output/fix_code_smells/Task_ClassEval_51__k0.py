@@ -1,3 +1,4 @@
+```python
 class KappaCalculator:
     @staticmethod
     def kappa(matrix, n):
@@ -30,3 +31,4 @@ class KappaCalculator:
         
         kappa = (P_bar - P_e) / (1 - P_e)
         return kappa
+```

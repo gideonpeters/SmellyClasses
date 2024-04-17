@@ -1,3 +1,4 @@
+```python
 import openpyxl
 import os
 
@@ -31,9 +32,13 @@ class ExcelProcessor:
         sheet = workbook.active
         processed_data = []
         for i, row in enumerate(sheet.iter_rows(values_only=True)):
-            row += (row[n],)
+            if i == 0:
+                row += (row[n],)
+            else:
+                row += (row[n],)
             processed_data.append(row)
         output_file = 'processed_' + file_name
         workbook.save(output_file)
         workbook.close()
         return 1, output_file
+```

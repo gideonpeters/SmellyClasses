@@ -14,7 +14,7 @@ from tenacity import (
     wait_random_exponential,
 )  # for exponential backoff
 
-api_key = "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"
+api_key = "[Your_API_Key_Here]"
 client = OpenAI(api_key=api_key)
 
 
@@ -128,7 +128,7 @@ if __name__ == "__main__":
     #     content = file.read()
 
     # findings = preliminary code smells analysis - findings
-    filename = "findings.csv"
+    filename = "RQ1 findings.csv"
 
     df = pd.read_csv(filename)
     grouped = df.groupby('project')
@@ -137,7 +137,7 @@ if __name__ == "__main__":
         print(group_data)
         messages = ""
         for index, row in group_data.iterrows():
-            messages += row['code_smell'] + "\n"
+            messages += row['message'] + "\n"
         print(messages)
 
         python_code = programmer._read_python_file("output/generation/pys/" + group_name + ".py")

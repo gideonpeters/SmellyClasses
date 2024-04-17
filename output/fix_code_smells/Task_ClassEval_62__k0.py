@@ -4,7 +4,6 @@ class NLPDataProcessor:
 
     def construct_stop_word_list(self):
         # Add a nested comment explaining why this method is empty
-        # This method is empty because the stop words list is hardcoded and does not need to be constructed dynamically
         return ['a', 'an', 'the']
 
     def remove_stop_words(self, string_list, stop_word_list):

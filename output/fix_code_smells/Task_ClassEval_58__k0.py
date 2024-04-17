@@ -1,3 +1,4 @@
+```python
 class MinesweeperGame:
     def __init__(self, rows, mines):
         self.rows = rows
@@ -33,3 +34,4 @@ class MinesweeperGame:
         self.player_map[row][col] = self.minesweeper_map[row][col]
         self.score += 1
         return self.player_map
+```

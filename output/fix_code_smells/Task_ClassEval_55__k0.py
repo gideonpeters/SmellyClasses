@@ -1,3 +1,4 @@
+```python
 class Manacher:
     PALINDROMIC_PATTERN = 'a|b|a|b|a'
 
@@ -76,3 +77,4 @@ if __name__ == '__main__':
             self.assertEqual(manacher.palindromic_string(), 'ababa')
 
     unittest.main()
+```
