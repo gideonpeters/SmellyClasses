@@ -1,4 +1,3 @@
-```python
 import re
 
 class DiscountStrategy:
@@ -36,4 +35,3 @@ class DiscountStrategy:
         elif self.promo == self.large_order_promo:
             discount = 0.07 * self.total() if len(self.cart) >= 10 else 0
         return discount
-```

@@ -1,4 +1,3 @@
-```python
 class FitnessTracker:
     def __init__(self, height, weight, age, gender):
         self.height = height
@@ -33,4 +32,3 @@ class FitnessTracker:
             bmr = 447.593 + (9.247 * self.weight) + (3.098 * self.height * 100) - (4.330 * self.age)
         
         return round(bmr * 1.2, 14)
-```

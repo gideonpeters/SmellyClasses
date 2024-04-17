@@ -1,4 +1,3 @@
-```python
 class UrlPath:
     PATH_SEPARATOR = '/foo/bar/'
 
@@ -133,4 +132,3 @@ class UrlPathTest(unittest.TestCase):
 
         fixed_path = UrlPath.fix_path(UrlPath.PATH_SEPARATOR)
         self.assertEqual(fixed_path, 'foo/bar')
-```

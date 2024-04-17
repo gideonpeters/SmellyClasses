@@ -1,4 +1,3 @@
-```python
 class Snake:
     def __init__(self, screen_width, screen_height, block_size, start_position):
         self.screen_width = screen_width
@@ -37,4 +36,3 @@ class Snake:
     def eat_food(self):
         self.length += 1
         self.score += self.length * 100
-```
