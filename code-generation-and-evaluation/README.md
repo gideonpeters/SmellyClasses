@@ -133,6 +133,8 @@ $ pip install -e ClassEval
 
 **Model Outputs**: Keep all model-generated outputs in `output/model_output`. These outputs should be in JSON format, with predictions under the `predict` key, pointing to the list of generated code samples.
 
+**Iterative prompting **: `inference_iteration.py` is the script that handles grouping the code smells in our dataset by class, and prompting GPT for a solution.
+
 ### 🔍 Deep Dives
 **Class-Level Code Generation**: Dive into our implementation details [here](https://github.com/FudanSELab/ClassEval/blob/master/generation).
 
