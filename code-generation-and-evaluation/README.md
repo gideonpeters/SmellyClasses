@@ -10,7 +10,9 @@ for Evaluating LLMs on Class-level Code Generation"](http://arxiv.org/abs/2308.0
 
 ## Benchmark Dataset
 
-We manually build ClassEval of 100 class-level Python coding tasks, consists of 100 classes and 412 methods, and average 33.1 test cases per class.
+We forked part of this repository from the [ClassEval repo](https://github.com/FudanSELab/ClassEval). 
+
+Previous work has manually build ClassEval of 100 class-level Python coding tasks, consists of 100 classes and 412 methods, and average 33.1 test cases per class.
 
 For 100 class-level tasks, diversity is maintained by encompassing these tasks over a wide spectrum of topics, including *Management Systems*, *Data Formatting*, *Mathematical Operations*, *Game Development*, *File Handing*, *Database Operations* and *Natural Language Processing*.
 
@@ -18,7 +20,7 @@ For 412 methods, they have been constructed with diverse dependencies, including
 
 ## Benchmark Format
 
-ClassEval has been meticulously structured and saved in the JSON format, accessible at [ClassEval Data](https://github.com/FudanSELab/ClassEval/blob/master/data/ClassEval_data.json). The specific data fields for each task are delineated as follows:
+ClassEval has been meticulously structured and saved in the JSON format, accessible at [ClassEval Data](https://github.com/gideonpeters/SmellyClasses/blob/main/code-generation-and-evaluation/data/ClassEval_data.json). The specific data fields for each task are delineated as follows:
 
 * task_id: the unique identifier for each task.
 
@@ -67,7 +69,7 @@ The comparison of test case examples from the ClassEval, HumanEval, and MBPP dat
 
 ## Generation Strategies
 
-We devise three distinct generation strategies for evaluating LLMs on class-level code generation:
+Authors of ClassEval devise three distinct generation strategies for evaluating LLMs on class-level code generation:
 
 **Holistic Generation**: the model is asked to generate the entire class all at once with the class skeleton as inputs. 
 
@@ -79,7 +81,7 @@ The holistic generation strategy evaluates the model ability of handling long an
 
 ## Implementation
 
-We consider two sampling methods for code generation: (i) nucleus sampling, where five solution code samples are randomly generated for each task with a temperature of 0.2 and default top_p, and (ii) greedy sampling, where only one single solution code sample is generated for each task using greedy decoding, i.e., setting the “do_sample” hyperparameter to false (temperature of 0). Our experiments are run on a computational infrastructure comprising eight A800-80G GPUs.
+Authors of ClassEval consider two sampling methods for code generation: (i) nucleus sampling, where five solution code samples are randomly generated for each task with a temperature of 0.2 and default top_p, and (ii) greedy sampling, where only one single solution code sample is generated for each task using greedy decoding, i.e., setting the “do_sample” hyperparameter to false (temperature of 0). Our experiments are run on a computational infrastructure comprising eight A800-80G GPUs.
 
 ## Results
 
