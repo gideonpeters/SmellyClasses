@@ -1,0 +1,215 @@
+project,rule,severity,line,effort,debt,tags,type,scope,cleanCodeAttribute,quickFixAvailable,cleanCodeAttributeCategory,Software_Quality_Impact,Impact_Severity,message
+ClassEval0canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval0canonical,python:S1186,CRITICAL,65,5min,5min,suspicious,CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,"Add a nested comment explaining why this method is empty, or complete the implementation."
+ClassEval0canonical,python:S1481,MINOR,70,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,LOW,"Remove the unused local variable ""method""."
+ClassEval0canonical,python:S5754,CRITICAL,81,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval1canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval10canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval11canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval12canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval12canonical,python:S1192,CRITICAL,99,6min,6min,design,CODE_SMELL,MAIN,DISTINCT,False,ADAPTABLE,MAINTAINABILITY,HIGH,Define a constant instead of duplicating this literal 'Player wins' 3 times.
+ClassEval12canonical,python:S1192,CRITICAL,101,6min,6min,design,CODE_SMELL,MAIN,DISTINCT,False,ADAPTABLE,MAINTAINABILITY,HIGH,Define a constant instead of duplicating this literal 'Dealer wins' 3 times.
+ClassEval13canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval13canonical,python:S5632,BLOCKER,62,5min,5min,python3,BUG,MAIN,LOGICAL,False,INTENTIONAL,RELIABILITY,HIGH,Change this code so that it raises an object deriving from BaseException.
+ClassEval14canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval15canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval15canonical,python:S116,MINOR,50,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this field ""textLen"" to match the regular expression ^[_a-z][_a-z0-9]*$."
+ClassEval15canonical,python:S116,MINOR,50,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this field ""patLen"" to match the regular expression ^[_a-z][_a-z0-9]*$."
+ClassEval15canonical,python:S117,MINOR,58,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""currentPos"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval16canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval16canonical,python:S3776,CRITICAL,65,16min,16min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 26 to the 15 allowed.
+ClassEval16canonical,python:S3923,MAJOR,115,15min,15min,,BUG,MAIN,CLEAR,False,INTENTIONAL,RELIABILITY,MEDIUM,Remove this if statement or edit its code blocks so that they're not all the same.
+ClassEval18canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval19canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval2canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval20canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval22canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval23canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval23canonical,python:S117,MINOR,103,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""dataIndex"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval23canonical,python:S117,MINOR,103,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""resultList"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval23canonical,python:S117,MINOR,103,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""resultIndex"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval23canonical,python:S117,MINOR,104,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""resultLen"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval23canonical,python:S117,MINOR,105,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""resultCount"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval24canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval24canonical,python:S1186,CRITICAL,63,5min,5min,suspicious,CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,"Add a nested comment explaining why this method is empty, or complete the implementation."
+ClassEval25canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval25canonical,python:S5754,CRITICAL,73,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval26canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval26canonical,python:S1186,CRITICAL,54,5min,5min,suspicious,CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,"Add a nested comment explaining why this method is empty, or complete the implementation."
+ClassEval26canonical,python:S5754,CRITICAL,72,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval26canonical,python:S117,MINOR,75,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""N"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval27canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval28canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval29canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval3canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval30canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval31canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval32canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval33canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval33canonical,python:S100,MINOR,113,5min,5min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename method ""FidelityPromo"" to match the regular expression ^[a-z_][a-z0-9_]*$."
+ClassEval33canonical,python:S100,MINOR,117,5min,5min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename method ""BulkItemPromo"" to match the regular expression ^[a-z_][a-z0-9_]*$."
+ClassEval33canonical,python:S100,MINOR,125,5min,5min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename method ""LargeOrderPromo"" to match the regular expression ^[a-z_][a-z0-9_]*$."
+ClassEval34canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval34canonical,python:S5754,CRITICAL,82,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval34canonical,python:S5754,CRITICAL,91,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval34canonical,python:S5754,CRITICAL,103,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval35canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval36canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval37canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval38canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval38canonical,python:S1186,CRITICAL,54,5min,5min,suspicious,CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,"Add a nested comment explaining why this method is empty, or complete the implementation."
+ClassEval38canonical,python:S5754,CRITICAL,66,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval38canonical,python:S5754,CRITICAL,78,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval38canonical,python:S117,MINOR,81,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""N"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval39canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval39canonical,python:S3776,CRITICAL,123,14min,14min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.
+ClassEval4canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval40canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval40canonical,python:S116,MINOR,56,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this field ""BMI_std"" to match the regular expression ^[_a-z][_a-z0-9]*$."
+ClassEval40canonical,python:S100,MINOR,61,5min,5min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename method ""get_BMI"" to match the regular expression ^[a-z_][a-z0-9_]*$."
+ClassEval40canonical,python:S117,MINOR,67,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""BMI_range"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval41canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval42canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval44canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval44canonical,python:S3776,CRITICAL,98,12min,12min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 22 to the 15 allowed.
+ClassEval45canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval46canonical,python:S1186,CRITICAL,40,5min,5min,suspicious,CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,"Add a nested comment explaining why this method is empty, or complete the implementation."
+ClassEval47canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval48canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval49canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval49canonical,python:S125,MAJOR,98,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval5canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval50canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval50canonical,python:S5754,CRITICAL,60,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval50canonical,python:S5754,CRITICAL,68,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval51canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval51canonical,python:S117,MINOR,48,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""testData"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval51canonical,python:S117,MINOR,49,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""dataMat"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval51canonical,python:S5806,MAJOR,55,5min,5min,"bad-practice, confusing, pitfall",CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Rename this variable; it shadows a builtin.
+ClassEval51canonical,python:S117,MINOR,56,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""Pe"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval51canonical,python:S117,MINOR,62,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""N"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval51canonical,python:S117,MINOR,62,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""testData"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval51canonical,python:S117,MINOR,63,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""dataMat"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval51canonical,python:S117,MINOR,64,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""oneMat"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval51canonical,python:S5806,MAJOR,65,5min,5min,"bad-practice, confusing, pitfall",CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Rename this variable; it shadows a builtin.
+ClassEval51canonical,python:S117,MINOR,79,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""Pe"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval52canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval53canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval54canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval54canonical,python:S117,MINOR,103,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""BOARD_SIZE"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval54canonical,python:S117,MINOR,103,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""ICONS"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval54canonical,python:S3776,CRITICAL,136,6min,6min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.
+ClassEval55canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval56canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval56canonical,python:S1244,MAJOR,110,5min,5min,,BUG,MAIN,LOGICAL,False,INTENTIONAL,RELIABILITY,MEDIUM,Do not perform equality checks with floating point values.
+ClassEval57canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval57canonical,python:S1186,CRITICAL,50,5min,5min,suspicious,CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,"Add a nested comment explaining why this method is empty, or complete the implementation."
+ClassEval57canonical,python:S3776,CRITICAL,54,20min,20min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 30 to the 15 allowed.
+ClassEval57canonical,python:S6660,MINOR,55,2min,2min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,MEDIUM,Use `not isinstance()` here.
+ClassEval57canonical,python:S6660,MINOR,55,2min,2min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,MEDIUM,Use `not isinstance()` here.
+ClassEval57canonical,python:S112,MAJOR,56,20min,20min,"cwe, error-handling",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Replace this generic exception class with a more specific one.
+ClassEval57canonical,python:S6660,MINOR,60,2min,2min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,MEDIUM,Use the `isinstance()` function here.
+ClassEval57canonical,python:S6660,MINOR,76,2min,2min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,MEDIUM,Use the `isinstance()` function here.
+ClassEval57canonical,python:S3776,CRITICAL,97,22min,22min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.
+ClassEval57canonical,python:S6660,MINOR,98,2min,2min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,MEDIUM,Use `not isinstance()` here.
+ClassEval57canonical,python:S6660,MINOR,98,2min,2min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,MEDIUM,Use `not isinstance()` here.
+ClassEval57canonical,python:S112,MAJOR,99,20min,20min,"cwe, error-handling",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Replace this generic exception class with a more specific one.
+ClassEval57canonical,python:S6660,MINOR,103,2min,2min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,MEDIUM,Use the `isinstance()` function here.
+ClassEval57canonical,python:S6660,MINOR,123,2min,2min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,MEDIUM,Use the `isinstance()` function here.
+ClassEval58canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval58canonical,python:S3776,CRITICAL,76,55min,55min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 65 to the 15 allowed.
+ClassEval58canonical,python:S1481,MINOR,77,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,LOW,"Remove the unused local variable ""row""."
+ClassEval58canonical,python:S1481,MINOR,77,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,LOW,"Remove the unused local variable ""column""."
+ClassEval58canonical,python:S1481,MINOR,78,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,LOW,"Remove the unused local variable ""num""."
+ClassEval58canonical,python:S100,MINOR,110,5min,5min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename method ""generate_playerMap"" to match the regular expression ^[a-z_][a-z0-9_]*$."
+ClassEval58canonical,python:S1481,MINOR,111,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,LOW,"Remove the unused local variable ""column""."
+ClassEval58canonical,python:S1481,MINOR,111,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,LOW,"Remove the unused local variable ""row""."
+ClassEval59canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval6canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval6canonical,python:S100,MINOR,40,5min,5min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename method ""setNum"" to match the regular expression ^[a-z_][a-z0-9_]*$."
+ClassEval60canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval61canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval62canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval63canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval64canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval65canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval65canonical,python:S6659,MINOR,128,5min,5min,,CODE_SMELL,MAIN,CONVENTIONAL,False,CONSISTENT,MAINTAINABILITY,LOW,Use `endswith` here.
+ClassEval66canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval66canonical,python:S1186,CRITICAL,36,5min,5min,suspicious,CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,"Add a nested comment explaining why this method is empty, or complete the implementation."
+ClassEval66canonical,python:S3776,CRITICAL,39,17min,17min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 27 to the 15 allowed.
+ClassEval66canonical,python:S5754,CRITICAL,64,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval67canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval68canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval69canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval7canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval7canonical,python:S3776,CRITICAL,46,16min,16min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 26 to the 15 allowed.
+ClassEval7canonical,python:S117,MINOR,48,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""Brkt"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval7canonical,python:S117,MINOR,52,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this local variable ""Current_Brkt"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval7canonical,python:S1066,MAJOR,54,5min,5min,clumsy,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Merge this if statement with the enclosing one.
+ClassEval7canonical,python:S1066,MAJOR,57,5min,5min,clumsy,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Merge this if statement with the enclosing one.
+ClassEval7canonical,python:S1066,MAJOR,60,5min,5min,clumsy,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Merge this if statement with the enclosing one.
+ClassEval70canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval70canonical,python:S117,MINOR,43,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""phoneNumber"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval70canonical,python:S116,MINOR,46,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this field ""phoneNumber"" to match the regular expression ^[_a-z][_a-z0-9]*$."
+ClassEval70canonical,python:S5886,MAJOR,50,5min,5min,,CODE_SMELL,MAIN,LOGICAL,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,"Return a value of type ""str"" instead of ""NoneType"" or update function ""_validate_name"" type hint."
+ClassEval70canonical,python:S5886,MAJOR,52,5min,5min,,CODE_SMELL,MAIN,LOGICAL,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,"Return a value of type ""str"" instead of ""NoneType"" or update function ""_validate_name"" type hint."
+ClassEval70canonical,python:S5886,MAJOR,57,5min,5min,,CODE_SMELL,MAIN,LOGICAL,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,"Return a value of type ""str"" instead of ""NoneType"" or update function ""_validate_sex"" type hint."
+ClassEval70canonical,python:S117,MINOR,60,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""phoneNumber"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval70canonical,python:S100,MINOR,60,5min,5min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename method ""_validate_phoneNumber"" to match the regular expression ^[a-z_][a-z0-9_]*$."
+ClassEval70canonical,python:S5886,MAJOR,62,5min,5min,,CODE_SMELL,MAIN,LOGICAL,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,"Return a value of type ""str"" instead of ""NoneType"" or update function ""_validate_phoneNumber"" type hint."
+ClassEval70canonical,python:S5886,MAJOR,64,5min,5min,,CODE_SMELL,MAIN,LOGICAL,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,"Return a value of type ""str"" instead of ""NoneType"" or update function ""_validate_phoneNumber"" type hint."
+ClassEval71canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval72canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval73canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval74canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval75canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval75canonical,python:S3923,MAJOR,68,15min,15min,,BUG,MAIN,CLEAR,False,INTENTIONAL,RELIABILITY,MEDIUM,Remove this if statement or edit its code blocks so that they're not all the same.
+ClassEval75canonical,python:S108,MAJOR,77,5min,5min,suspicious,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Either remove or fill this block of code.
+ClassEval76canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval77canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval77canonical,python:S117,MINOR,73,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""SCREEN_WIDTH"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval77canonical,python:S117,MINOR,73,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""SCREEN_HEIGHT"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval77canonical,python:S117,MINOR,73,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""BLOCK_SIZE"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval78canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval78canonical,python:S6035,MAJOR,43,5min,5min,regex,CODE_SMELL,MAIN,EFFICIENT,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Replace this alternation with a character class.
+ClassEval79canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval8canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval80canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval80canonical,python:S1192,CRITICAL,60,6min,6min,design,CODE_SMELL,MAIN,DISTINCT,False,ADAPTABLE,MAINTAINABILITY,HIGH,"Define a constant instead of duplicating this literal "" WHERE "" 3 times."
+ClassEval80canonical,python:S1192,CRITICAL,60,6min,6min,design,CODE_SMELL,MAIN,DISTINCT,False,ADAPTABLE,MAINTAINABILITY,HIGH,Define a constant instead of duplicating this literal ' AND ' 3 times.
+ClassEval81canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval82canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval83canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval84canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval85canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval86canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval86canonical,python:S117,MINOR,47,2min,2min,convention,CODE_SMELL,MAIN,IDENTIFIABLE,False,CONSISTENT,MAINTAINABILITY,LOW,"Rename this parameter ""N"" to match the regular expression ^[_a-z][a-z0-9_]*$."
+ClassEval87canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval87canonical,python:S5806,MAJOR,91,5min,5min,"bad-practice, confusing, pitfall",CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Rename this variable; it shadows a builtin.
+ClassEval87canonical,python:S5806,MAJOR,95,5min,5min,"bad-practice, confusing, pitfall",CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Rename this variable; it shadows a builtin.
+ClassEval87canonical,python:S5806,MAJOR,100,5min,5min,"bad-practice, confusing, pitfall",CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Rename this variable; it shadows a builtin.
+ClassEval87canonical,python:S5806,MAJOR,115,5min,5min,"bad-practice, confusing, pitfall",CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Rename this variable; it shadows a builtin.
+ClassEval88canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval88canonical,python:S1186,CRITICAL,65,5min,5min,suspicious,CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,"Add a nested comment explaining why this method is empty, or complete the implementation."
+ClassEval89canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval89canonical,python:S1481,MINOR,62,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,LOW,"Remove the unused local variable ""i""."
+ClassEval89canonical,python:S1481,MINOR,98,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,LOW,"Remove the unused local variable ""e""."
+ClassEval9canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval9canonical,python:S1871,MAJOR,75,10min,10min,"design, suspicious",CODE_SMELL,MAIN,DISTINCT,False,ADAPTABLE,MAINTAINABILITY,MEDIUM,"Either merge this branch with the identical one on line ""69"" or change one of the implementations."
+ClassEval90canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval91canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval92canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval93canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval94canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval95canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval96canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval97canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval97canonical,python:S3776,CRITICAL,76,14min,14min,brain-overload,CODE_SMELL,MAIN,FOCUSED,False,ADAPTABLE,MAINTAINABILITY,HIGH,Refactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.
+ClassEval98canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval98canonical,python:S5754,CRITICAL,83,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval98canonical,python:S5754,CRITICAL,91,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval99canonical,python:S125,MAJOR,1,5min,5min,unused,CODE_SMELL,MAIN,CLEAR,False,INTENTIONAL,MAINTAINABILITY,MEDIUM,Remove this commented out code.
+ClassEval99canonical,python:S5754,CRITICAL,64,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval99canonical,python:S5754,CRITICAL,72,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval99canonical,python:S5754,CRITICAL,80,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
+ClassEval99canonical,python:S5754,CRITICAL,89,5min,5min,"error-handling, bad-practice, suspicious",CODE_SMELL,MAIN,COMPLETE,False,INTENTIONAL,MAINTAINABILITY,HIGH,Specify an exception class to catch or reraise the exception
