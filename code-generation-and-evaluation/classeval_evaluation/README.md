@@ -13,7 +13,7 @@ python evaluation.py --source_file_name model_output --eval_data ClassEval_data 
     - 1: Greedy sampling.
 - `--eval_data`:  Refers to the benchmark data file, named `ClassEval_data` in the current rendition.
 
-Our nucleus sampling encompasses 5 samples. During the evaluation, we restrict our scope to the results of pass@1, pass@3, and pass@5. If there's a need to generate a different sample size, it necessitates adjustments `cal_metrics_pass_at_k(model_list, k, n)` in the `evaluation.py` code, where k represents the 'k' in pass@k and n stands for the sample count.
+During the evaluation, we restrict our scope to the results of pass@1. If there's a need to generate a different sample size, it necessitates adjustments `cal_metrics_pass_at_k(model_list, k, n)` in the `evaluation.py` code, where k represents the 'k' in pass@k and n stands for the sample count.
 
 ## Output
 
