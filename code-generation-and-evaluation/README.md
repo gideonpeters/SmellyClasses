@@ -57,22 +57,6 @@ For the comparison of the inputs for the ClassEval, HumanEval, and MBPP benchmar
 
 We implement the ClassEval for code generation using greedy sampling, where only one single solution code sample is generated for each task using greedy decoding, i.e., setting the “do_sample” hyperparameter to false (with a temperature of 0).
 
-## Results
-
-### Overall Correctness
-
-The following figure shows the class-level and method-level Pass@1 with greedy sampling of studied LLMs on ClassEval and HumanEval:
-
-<img src="output\images\C_pass1_bar.png" alt="C_pass1_bar" style="zoom: 29%;" />
-
-The following table presents the class-level and method-level Pass@k
-with nucleus sampling on ClassEval:
-
-<img src="output\images\pass@k.png" alt="pass@k" style="zoom: 50%;" />
-
-Notably, we only present the best class-level Pass@1 (and corresponding method-level Pass@1) for each model among the three generation strategies.
-
-
 ## Usage
 
 Ensure you're using the right setup and following the proper directory structure to seamlessly evaluate class-level code generation this tool.
