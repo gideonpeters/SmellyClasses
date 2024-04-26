@@ -19,13 +19,13 @@ def args_init():
         "--output_path",
         type=str,
         default="model_output.json",
-        help="output file path",
+        help="output file path for the json of the generated code",
     )
     parser.add_argument(
         "--output_path_2",
         type=str,
         default="model_output_2.json",
-        help="second output file path",
+        help="second output file path for the python files of generated code",
     )
     parser.add_argument(
         "--cuda",

@@ -52,9 +52,8 @@ Determine your generation strategy with the `--generation_strategy` argument:
 - 1: Incremental Generation
 - 2: Compositional Generation
 
-For insights on the practical implementation of these generation strategies, see the `def pipeline` within `inference_pipeline.py`.
+For this project, we make use of the Holisitic Generation. For insights on the practical implementation of these generation strategies, see the `def pipeline` within `inference_pipeline.py`.
 
-For this project, we make use of the Holisitic Generation.
 
 ### Further Parameters
 
