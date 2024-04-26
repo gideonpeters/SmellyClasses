@@ -10,7 +10,7 @@ This project contains cloned sections from the [ClassEval](https://github.com/Fu
 
 Gideon Peters gi_peter@live.concordia.ca
 
-Mayra Ruiz
+Mayra Ruiz m_ruizro@live.concordia.ca
 
 Mohamed Bilel Besbes
 
