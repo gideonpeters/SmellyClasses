@@ -86,9 +86,13 @@ def export_scan_reports(option):
 
 
 generate_scan_reports("llm")
-generate_scan_reports("canonical")
-generate_scan_reports("enhanced-llm")
 time.sleep(120)
 export_scan_reports("llm")
+df = pd.DataFrame()
+generate_scan_reports("canonical")
+time.sleep(120)
 export_scan_reports("canonical")
+df = pd.DataFrame()
+generate_scan_reports("enhanced-llm")
+time.sleep(120)
 export_scan_reports("enhanced-llm")
